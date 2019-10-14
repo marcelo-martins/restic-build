@@ -1,0 +1,8 @@
+os: linux-ppc64le
+language: go
+
+script:
+  - unset GOPATH
+  - git clone https://github.com/restic/restic
+  - cd restic
+  - go run build.go -T
